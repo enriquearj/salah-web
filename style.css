@@ -133,6 +133,7 @@ body {
     transform: translateX(-50%);
     color: #8b949e;
     margin-bottom: 1rem;
+    margin: 0 auto;
     animation: bounce 2s infinite;
 }
 
@@ -542,6 +543,7 @@ body {
     .modal-content { padding: 1rem; max-width:98vw; }
 }
     </style>
+
 
 
 
