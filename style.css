@@ -54,7 +54,6 @@ body {
     z-index: 1;
     pointer-events: none;
 }
-
 .hero .container, .hero .author-credit, .hero .scroll-indicator {
     position: relative;
     z-index: 2;
@@ -531,6 +530,7 @@ body {
     .modal-content { padding: 1rem; max-width:98vw; }
 }
     </style>
+
 
 
 
