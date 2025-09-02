@@ -35,7 +35,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: relative;
     overflow: hidden;
     background-image: 
         linear-gradient(rgba(13,17,23,0.97), rgba(22,27,34,0.97)),
@@ -547,6 +546,7 @@ body {
     .modal-content { padding: 1rem; max-width:98vw; }
 }
     </style>
+
 
 
 
