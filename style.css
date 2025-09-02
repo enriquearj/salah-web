@@ -66,7 +66,7 @@ body {
     #0b1018 100%        /* Color del fondo abajo */
   );
 }
-.hero .container, .hero .author-credit, .hero  {
+.hero .container, .hero .author-credit, .hero .scroll-indicator {
     position: relative;
     z-index: 2;
 }
@@ -544,6 +544,7 @@ body {
     .modal-content { padding: 1rem; max-width:98vw; }
 }
     </style>
+
 
 
 
