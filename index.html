@@ -610,7 +610,29 @@
             </div>
         </div>
     </section>
+    <!-- Contact Button after summary -->
+    <div style="text-align:center; margin: 3rem 0;">
+      <button id="open-contact-modal" style="background:#6366f1;color:#fff;padding:1rem 2rem;border:none;border-radius:8px;font-size:1.2rem;cursor:pointer;">
+        📧 Contacto
+      </button>
+    </div>
 
+    <!-- Contact Modal (hidden by default) -->
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <button class="modal-close" id="closeContactModal" title="Cerrar">&times;</button>
+        <h2 style="text-align:center;color:#3730a3;margin-bottom:1.2rem;">Contáctanos</h2>
+        <form action="https://formspree.io/f/{TU_FORM_ID}" method="POST" class="contact-form" id="contact-form">
+          <input type="text" name="name" placeholder="Nombre" required>
+          <input type="email" name="email" placeholder="Correo electrónico" required>
+          <textarea name="message" placeholder="Mensaje" required rows="5"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+        <div id="contact-success">
+          ¡Gracias por tu mensaje! Te contactaremos pronto.
+        </div>
+      </div>
+    </div>
     <script>
         // Scroll animations
         const observerOptions = {
@@ -656,6 +678,39 @@
             card.addEventListener('mouseleave', () => {
                 card.style.transform = 'translateY(0) scale(1)';
             });
+        });
+
+		        // Modal open/close logic
+        const contactModal = document.getElementById('contactModal');
+        document.getElementById('open-contact-modal').onclick = function() {
+          contactModal.style.display = 'flex';
+        }
+        document.getElementById('closeContactModal').onclick = function() {
+          contactModal.style.display = 'none';
+        }
+        window.onclick = function(event) {
+          if (event.target == contactModal) {
+            contactModal.style.display = 'none';
+          }
+        }
+
+        // Contact form AJAX + Success
+        document.getElementById('contact-form').addEventListener('submit', async function(e) {
+          e.preventDefault();
+          const form = e.target;
+          const data = new FormData(form);
+          const action = form.getAttribute('action');
+          const response = await fetch(action, {
+            method: 'POST',
+            body: data,
+            headers: { 'Accept': 'application/json' }
+          });
+          if (response.ok) {
+            form.style.display = 'none';
+            document.getElementById('contact-success').style.display = 'block';
+          } else {
+            alert('Hubo un error enviando el mensaje. Intenta más tarde.');
+          }
         });
     </script>
 </body>
