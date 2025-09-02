@@ -5,15 +5,14 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            overflow-x: hidden;
-            background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 25%, #4338ca 50%, #6366f1 75%, #8b5cf6 100%);
-            background-size: 400% 400%;
-            animation: gradientShift 20s ease infinite;
-            min-height: 100vh;
-        }
-
+		body {
+		    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+		    overflow-x: hidden;
+		    background: linear-gradient(135deg, #24292f 0%, #0969da 50%, #8250df 100%);
+		    background-size: 400% 400%;
+		    animation: gradientShift 20s ease infinite;
+		    min-height: 100vh;
+		}
         @keyframes gradientShift {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
@@ -510,4 +509,5 @@
       @media (max-width:500px) {
         .modal-content { padding: 1rem; max-width:98vw; }
       }
+
     </style>
