@@ -54,10 +54,6 @@ body {
     z-index: 1;
     pointer-events: none;
 }
-.hero .container, .hero .author-credit, .hero .scroll-indicator {
-    position: relative;
-    z-index: 2;
-}
 @keyframes backgroundMove {
     0% { background-position: center, 0 0; }
     100% { background-position: center, 200px 200px; }
@@ -530,6 +526,7 @@ body {
     .modal-content { padding: 1rem; max-width:98vw; }
 }
     </style>
+
 
 
 
