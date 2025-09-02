@@ -114,6 +114,10 @@ body {
     margin-bottom: 3rem;
     font-style: italic;
     animation: fadeInUp 1s ease-out 0.5s both;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
 }
 
 @keyframes fadeInUp {
@@ -542,6 +546,7 @@ body {
     .modal-content { padding: 1rem; max-width:98vw; }
 }
     </style>
+
 
 
 
