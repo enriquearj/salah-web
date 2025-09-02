@@ -74,7 +74,7 @@ body {
 .hero h1 {
     font-size: clamp(3rem, 8vw, 8rem);
     font-weight: 900;
-    background: linear-gradient(45deg, #fff, #f8f9fa, #e9ecef);
+    background: linear-gradient(45deg, #e6edf3, #c9d1d9, #f6f8fa);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -526,6 +526,7 @@ body {
     .modal-content { padding: 1rem; max-width:98vw; }
 }
     </style>
+
 
 
 
