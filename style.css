@@ -9,9 +9,9 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     overflow-x: hidden;
     background: linear-gradient(135deg, #0d1117 0%, #161b22 55%, #23272e 100%);
-    background-size: 200% 200%;
-    animation: gradientShift 20s ease infinite;
-    min-height: 100vh;
+     background-size: 400% 400%;
+     animation: gradientShift 20s ease infinite;
+     min-height: 100vh;
     color: #e6edf3;
 }
 
@@ -546,6 +546,7 @@ body {
     .modal-content { padding: 1rem; max-width:98vw; }
 }
     </style>
+
 
 
 
