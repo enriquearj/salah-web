@@ -83,7 +83,7 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: 1rem;
-    text-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    text-shadow: 0 10px 30px rgb(255 255 255 / 70%);
     animation: fadeInUp 1s ease-out;
 }
 
@@ -120,6 +120,7 @@ body {
     bottom: 2rem;
     transform: translateX(-50%);
     color: #8b949e;
+    left:2%;
     animation: bounce 2s infinite;
 }
 
@@ -529,6 +530,7 @@ body {
     .modal-content { padding: 1rem; max-width:98vw; }
 }
     </style>
+
 
 
 
