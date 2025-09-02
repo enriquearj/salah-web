@@ -44,7 +44,21 @@ body {
     background-position: center, 0 0;
     animation: backgroundMove 30s linear infinite;
 }
+.hero-bg-blur {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/hero-bg.jpg') center center / cover no-repeat;
+    filter: blur(14px) brightness(0.7);
+    z-index: 1;
+    pointer-events: none;
+}
 
+.hero .container, .hero .author-credit, .hero .scroll-indicator {
+    position: relative;
+    z-index: 2;
+}
 @keyframes backgroundMove {
     0% { background-position: center, 0 0; }
     100% { background-position: center, 200px 200px; }
@@ -517,6 +531,7 @@ body {
     .modal-content { padding: 1rem; max-width:98vw; }
 }
     </style>
+
 
 
 
