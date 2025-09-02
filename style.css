@@ -45,13 +45,14 @@ body {
     animation: backgroundMove 30s linear infinite;
 }
 .hero-bg-blur {
-  position: relative;
-  width: 100%;
-  height: 400px; /* Ajusta según tu diseño */
-  background-image: url('TU-IMAGEN.jpg');
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
+   position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/hero-bg.jpg') center center / cover no-repeat;
+    filter: blur(14px) brightness(0.7);
+    z-index: 1;
+    pointer-events: none;
 }
 
 .hero-bg-blur::after {
@@ -541,6 +542,7 @@ body {
     .modal-content { padding: 1rem; max-width:98vw; }
 }
     </style>
+
 
 
 
