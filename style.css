@@ -131,7 +131,7 @@ body {
 }
 
        .scroll-indicator {
-            position: absolute;
+            position: absolute !important;
             bottom: 2rem;
             left: 50%;
             transform: translateX(-50%);
@@ -546,6 +546,7 @@ body {
     .modal-content { padding: 1rem; max-width:98vw; }
 }
     </style>
+
 
 
 
